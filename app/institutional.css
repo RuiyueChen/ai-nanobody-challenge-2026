@@ -1,0 +1,123 @@
+/* Presentation-only theme. Existing composition, breakpoints and interactions are retained. */
+:root {
+  --bg: #F7F7F5;
+  --panel: rgba(255,255,255,.65);
+  --ink: #1A1A1A;
+  --muted: #5A5A5A;
+  --accent: #A64545;
+  --line: rgba(26,26,26,.1);
+  --red-dark: #8F383B;
+  --red-light: #F3E5E3;
+  --teal: #5A9B98;
+  --teal-light: #DCEDEC;
+  --glass-border: rgba(166,69,69,.18);
+  --soft-shadow: 0 8px 30px rgba(65,53,48,.035);
+  color-scheme: light;
+}
+body {background:var(--bg);color:var(--ink)}
+h1,h2,h3,h4 {font-weight:500}
+.hero h1 {letter-spacing:-2px;line-height:1.16}
+.site-header {background:rgba(255,255,255,.75);border-color:rgba(0,0,0,.08);backdrop-filter:blur(20px)}
+.brand,.brand-icon,.brand-sub b {color:var(--accent)}
+.brand-icon {border-color:var(--accent)}
+.brand-sub {color:var(--muted)}
+.nav {color:var(--muted)}
+.nav a:hover,.nav a[aria-current=page] {color:var(--red-dark)}
+.header-submit {border-color:var(--accent);color:var(--red-dark);background:transparent}
+.header-submit:hover {background:var(--red-light)}
+.menu-button {color:var(--red-dark)}
+.hero {background:var(--bg)}
+.hero-art {background-image:var(--protein-hero-light);opacity:.92;mix-blend-mode:multiply}
+.hero:after {background:linear-gradient(90deg,#F7F7F5 0%,#F7F7F5c9 27%,#F7F7F500 65%),linear-gradient(0deg,#F7F7F5 0%,#F7F7F500 20%)}
+.hero-grid {background-image:linear-gradient(#5A9B9809 1px,transparent 1px),linear-gradient(90deg,#5A9B9809 1px,transparent 1px)}
+.hero h1 span {color:var(--red-dark)}
+.hero-sub {color:var(--muted)}
+.hero-foot,.hero-bottom,.hero-bottom a {color:#6c6c6c}
+.hero-foot>span {background:#c7c7c0}
+.hero-foot svg {color:var(--teal)}
+.structure-label {color:#507c79}
+.structure-label small {color:#6b7775}
+.crosshair {color:var(--teal)}
+.button {background:var(--accent);border-color:var(--accent);color:#fff}
+.button:hover {background:var(--red-dark);border-color:var(--red-dark)}
+.button.secondary {background:transparent;border-color:var(--accent);color:var(--red-dark);backdrop-filter:blur(20px)}
+.button.secondary:hover {background:var(--red-light);border-color:var(--red-dark)}
+.overview .benchmark-subtitle {color:#7A7A7A}
+.metrics>div {border-color:var(--glass-border)}
+.metrics strong {color:var(--ink)}
+.metrics>div>span {color:var(--muted)}
+.alternate {background:#EFEFEA}
+.text-link {color:var(--red-dark)}
+.text-link:hover {color:var(--accent)}
+.challenge-card,.form-panel,.side-card,.results-status {
+  background:rgba(255,255,255,.65);
+  border-color:rgba(166,69,69,.18);
+  box-shadow:var(--soft-shadow);
+  backdrop-filter:blur(20px);
+}
+.challenge-card:hover {border-color:rgba(166,69,69,.38)}
+.card-top {color:var(--accent)}
+.pill {border-color:rgba(90,155,152,.25);background:rgba(220,237,236,.45);color:#486c69}
+.target-symbol {color:var(--teal)}
+.target-symbol>span {color:var(--accent);font-weight:400;opacity:.85}
+.challenge-card .target {color:var(--muted)}
+.tags span {background:#EFEFEA;border-color:rgba(26,26,26,.06);color:#60605d}
+.card-link {color:var(--red-dark)}
+.card-link:hover {color:var(--accent)}
+.challenge-details ul,.challenge-details ol {color:var(--muted)}
+.process-top {color:var(--teal)}
+.process-top span {color:var(--accent)}
+.evidence-note {background:rgba(255,255,255,.65);border-color:var(--glass-border);box-shadow:var(--soft-shadow);backdrop-filter:blur(20px)}
+.evidence-note p {color:#3f3f3f}
+.evidence-note span {color:var(--muted)}
+.stage-number {background:var(--red-light);border-color:var(--glass-border);color:var(--accent)}
+.workflow-stage:not(:last-child):before {background:rgba(166,69,69,.2)}
+.requirement-grid>div {background:rgba(255,255,255,.65);border-color:var(--glass-border);color:var(--muted)}
+.assay-flow>div {background:#EFEFEA;border-color:rgba(166,69,69,.38);color:#454545}
+.notice {background:#EFEFEA;border-color:rgba(26,26,26,.08);color:var(--muted)}
+.milestone {border-color:rgba(166,69,69,.3)}
+.milestone-dot {background:var(--red-light);border-color:rgba(166,69,69,.45);color:var(--accent)}
+.date-tag {background:rgba(255,255,255,.65);color:#6b6b6b}
+.results-status {background:radial-gradient(ellipse at 50% 0,rgba(220,237,236,.65),transparent 65%),rgba(255,255,255,.65)}
+.lab-orbit {background:var(--teal-light);border-color:rgba(90,155,152,.25);color:#527f7b;box-shadow:0 0 0 12px rgba(220,237,236,.2)}
+.results-status small {color:#7A7A7A}
+.future-table {background:rgba(255,255,255,.65);border-color:var(--glass-border);box-shadow:var(--soft-shadow)}
+.table-head {background:#EFEFEA;color:var(--muted)}
+.table-empty {color:#7A7A7A}
+.table-empty svg {color:var(--teal)}
+.auth-note {color:var(--muted)}
+input:not([type=file]),select,textarea {background:rgba(255,255,255,.8);border-color:#d2cdc8;color:var(--ink)}
+input::placeholder,textarea::placeholder {color:#7A7A7A}
+select {color-scheme:light}
+.demo-card {background:rgba(220,237,236,.28);border-color:rgba(90,155,152,.24)}
+.demo-card>svg {color:var(--teal)}
+.account-links,.form-switch a {color:var(--red-dark)}
+.form-section-title>span {background:var(--red-light);border-color:var(--glass-border)}
+.upload-field small {color:#7A7A7A}
+label {color:#454545}
+.upload-box {background:rgba(255,255,255,.6);border-color:rgba(166,69,69,.3)}
+.upload-box svg {color:var(--teal)}
+.upload-box>span {color:#7A7A7A}
+.upload-box.selected {border-color:var(--teal);background:rgba(220,237,236,.4)}
+.note {color:#7A7A7A!important}
+.error {color:var(--red-dark);background:var(--red-light)}
+.success-icon {border-color:rgba(90,155,152,.4);background:var(--teal-light);color:#477d79}
+.receipt {background:rgba(255,255,255,.65);border-color:var(--glass-border);box-shadow:var(--soft-shadow)}
+.receipt>span {color:#7A7A7A}
+.receipt strong {color:var(--red-dark)}
+footer {background:#EFEFEA}
+.footer-brand {color:var(--red-dark)}
+.footer-brand>span,.footer-main .eyebrow,.footer-bottom {color:#7A7A7A}
+.footer-main>div>a {color:var(--muted)}
+.footer-main>div>a:hover {color:var(--red-dark)}
+.footer-statement {color:var(--teal)}
+@media(max-width:850px){
+  .nav.open {background:rgba(247,247,245,.98);backdrop-filter:blur(20px)}
+  .hero-art {opacity:.6}
+  .hero:after {background:linear-gradient(90deg,#F7F7F5f2,#F7F7F555)}
+}
+@media(max-width:600px){
+  .hero h1 {letter-spacing:-1.3px}
+  .hero-art {opacity:.4}
+  .milestone {border-color:rgba(166,69,69,.3)}
+}
